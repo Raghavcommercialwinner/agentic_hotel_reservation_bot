@@ -24,7 +24,7 @@ const MicWithRipple = ({ listening, toggleMic, timer }) => (
     <div className="absolute inset-0 flex flex-col items-center justify-center">
       <button
         onClick={toggleMic}
-        className={`w-40 h-40 rounded-full flex items-center justify-center bg-cyan-500 text-white shadow-2xl hover:scale-105 transition-all duration-300 ${
+        className={`w-40 h-40 rounded-full flex items-center justify-center bg-gradient-to-br from-blue-600 to-purple-600 text-white shadow-2xl hover:scale-105 transition-all duration-300 ${
           listening ? "animate-pulse" : ""
         }`}
       >
