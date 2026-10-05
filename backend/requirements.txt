@@ -1,0 +1,23 @@
+# hotel_reservation backend (enterprise) — direct dependencies.
+
+fastapi
+uvicorn
+python-multipart
+pydantic
+python-dotenv
+
+# Database (PostgreSQL + ORM)
+SQLAlchemy>=2.0
+psycopg2-binary
+
+# Auth session validation
+httpx
+
+# LLM + voice STT (Groq: intent extraction, reply generation, Whisper STT)
+groq
+
+# NLU date parsing
+python-dateutil
+
+# Note: text-to-speech is done in the browser (Web Speech API) — no server TTS dep.
+# Speech-to-text uses Groq Whisper (accepts webm directly — no ffmpeg/pydub needed).

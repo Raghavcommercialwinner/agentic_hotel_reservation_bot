@@ -1,0 +1,2 @@
+user: hi
+hotel: What are you looking for? Are you trying to make a booking or inquire about existing bookings?

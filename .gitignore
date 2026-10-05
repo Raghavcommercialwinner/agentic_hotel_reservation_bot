@@ -1,24 +1,179 @@
-# Logs
-logs
-*.log
+# ============================================================
+# NEXT.JS / NODE.JS
+# ============================================================
+
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Production build
+dist/
+build/
+
+# Next.js cache
+.next/cache/
+
+# Vercel
+.vercel/
+
+# Node logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Package manager caches
+.npm/
+.yarn/
+.pnpm-store/
+
+# TypeScript
+*.tsbuildinfo
+
+
+# ============================================================
+# PYTHON
+# ============================================================
+
+# Python cache
+__pycache__/
+**/__pycache__/
+
+*.py[cod]
+*$py.class
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python packaging
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Python caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyright/
+
+# Coverage
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Logs
+*.log
+
+
+# ============================================================
+# ENVIRONMENT / SECRETS
+# ============================================================
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Local configuration
 *.local
 
-# Editor directories and files
+# Private keys / certificates
+*.pem
+*.key
+*.p12
+*.pfx
+
+
+# ============================================================
+# DATABASE / LOCAL DATA
+# ============================================================
+
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+
+# Local database/data directories
+data/
+database/
+uploads/
+
+
+# ============================================================
+# TESTING
+# ============================================================
+
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+
+
+# ============================================================
+# IDE
+# ============================================================
+
+# VS Code
 .vscode/*
+!.vscode/settings.json
 !.vscode/extensions.json
-.idea
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# JetBrains
+.idea/
+*.iml
+
+
+# ============================================================
+# OS
+# ============================================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.lnk
+
+# macOS
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+
+# ============================================================
+# TEMPORARY FILES
+# ============================================================
+
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+
+
+# ============================================================
+# CACHE
+# ============================================================
+
+.cache/
+.parcel-cache/
+.turbo/
+.eslintcache
+.prettiercache
